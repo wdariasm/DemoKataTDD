@@ -18,3 +18,6 @@ class CalculadoraTest(TestCase):
 
     def test_Sumar_cadenaConMultiplesNumeros(self):
         self.assertEqual(Calculadora().Sumar("5,2,4,1"), 12, "Multiples números")
+
+    def test_Sumar_cadenaConMultiplesNumerosConSeparadores(self):
+        self.assertEqual(Calculadora().Sumar("5,2&4:1:2&8"), 22, "Multiples números con distintos separadores")
