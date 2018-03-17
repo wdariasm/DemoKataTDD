@@ -1,4 +1,7 @@
 
 class Calculadora:
     def Sumar(self,cadena):
-        return 0
+        if cadena =="":
+            return 0
+        else:
+            return 1
